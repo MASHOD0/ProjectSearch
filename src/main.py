@@ -1,7 +1,9 @@
 import nltk 
-import pandas
-import numpy
-from data import loadData as data
+import sys
+import os
+import string
+import math
+from data import loadData as data # data directory is where we have the functions defined to curate data.
 
 FILE = 1
 SENTENCES = 1
