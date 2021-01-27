@@ -19,7 +19,7 @@ def main():
         filename: data.tokenize(files[filename])
         for filename in files
     }
-    file_idfs = compute_idfs(file_words)
+    file_idfs = tfidf.compute_idfs(file_words)
 
     # Prompt user for query
     query = set(tokenize(input("Query: ")))
@@ -28,7 +28,7 @@ def main():
         marking = input("Marking: ")
 
     # Determine top file matches according to TF-IDF
-    filenames = top_files(query, file_words, file_idfs, n=marking)
+    filenames = tfidf.top_files(query, file_words, file_idfs, n=marking)
 
     # Extract sentences from top files
     sentences = dict()
@@ -40,10 +40,10 @@ def main():
                     sentences[sentence] = tokens
 
     # Compute IDF values across sentences
-    idfs = compute_idfs(sentences)
+    idfs = tfidf.compute_idfs(sentences)
 
     # Determine top sentence matches
-    matches = top_sentences(query, sentences, idfs, n=SENTENCE_MATCHES)
+    matches = tfidf.top_sentences(query, sentences, idfs, n=SENTENCE_MATCHES)
     for match in matches:
         print(match)
 
