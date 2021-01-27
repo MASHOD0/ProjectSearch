@@ -54,4 +54,32 @@ def top_files(query, files, idfs, n):
     top_files = sorted(tfidf , key=tfidf.get, reverse = True)
     return top_files[:n]
 
+def top_sentences(query, sentences, idfs, n):
+    """
+    Given a `query` (a set of words), `sentences` (a dictionary mapping
+    sentences to a list of their words), and `idfs` (a dictionary mapping words
+    to their IDF values), return a list of the `n` top sentences that match
+    the query, ranked according to idf. If there are ties, preference should
+    be given to sentences that have a higher query term density.
+    """
     
+    sentence_idf = {}
+    idf_sum = 0 
+    density = 0
+    density_to_idf = {}
+
+    for sentence in sentences:
+        for word in query:
+            if word in sentences[sentence]:
+                idf_sum = idf_sum + idfs[word]
+                density += 1
+            else:
+                continue
+        if density != 0:
+            length = len(sentences[sentence])
+            density = density /length
+            sentence_idf[sentence] = (idf_sum , density)
+            density = 0
+            idf_sum = 0
+    sentence_idf = sorted(sentence_idf , key = lambda k:(sentence_idf[k][0],sentence_idf[k][1]), reverse = True)        
+    return sentence_idf[:n]   
