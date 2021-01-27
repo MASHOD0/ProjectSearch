@@ -1,6 +1,7 @@
 import nltk 
 import pandas
 import numpy
+from data import loadData as data
 
 FILE = 1
 SENTENCES = 1
@@ -11,9 +12,9 @@ def main():
         sys.exit("Usage: python questions.py corpus")
 
     # Calculate IDF values across files
-    files = load_files(sys.argv[1])
+    files = data.load_files(sys.argv[1])
     file_words = {
-        filename: tokenize(files[filename])
+        filename: data.tokenize(files[filename])
         for filename in files
     }
     file_idfs = compute_idfs(file_words)
