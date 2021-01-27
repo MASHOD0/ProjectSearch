@@ -2,6 +2,8 @@ import nltk
 import pandas
 import numpy
 
+FILE = 1
+SENTENCES = 1
 
 def main():
     # Check command-line arguments
@@ -18,9 +20,12 @@ def main():
 
     # Prompt user for query
     query = set(tokenize(input("Query: ")))
+    marking = None
+    while type(marking) == int:
+        marking = input("Marking: ")
 
     # Determine top file matches according to TF-IDF
-    filenames = top_files(query, file_words, file_idfs, n=FILE_MATCHES)
+    filenames = top_files(query, file_words, file_idfs, n=marking)
 
     # Extract sentences from top files
     sentences = dict()
