@@ -4,7 +4,7 @@ This project is still in its planning Phase.
 We expect to make a python program which takes notes in `.txt` format and ask for questions and answer them.
 
 ## Current Deliverables
-- [ ] make a parser for parsing `.txt` files
+- [ ] take an input from `.txt` files and 
 - [ ] take questions as input and also the marking for the question
 - [ ] make a tf-idf algorithm to rank the sentences
 - [ ] and return those sentences
