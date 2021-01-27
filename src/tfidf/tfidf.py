@@ -27,29 +27,31 @@ def compute_idfs(documents):
         idfs[word] = math.log( (num_docs / value) )
 
 
-def tokenize(document):
+def top_files(query, files, idfs, n):
     """
-    Given a document (represented as a string), return a list of all of the
-    words in that document, in order.
-
-    Process document by coverting all words to lowercase, and removing any
-    punctuation or English stopwords.
+    Given a `query` (a set of words), `files` (a dictionary mapping names of
+    files to a list of their words), and `idfs` (a dictionary mapping words
+    to their IDF values), return a list of the filenames of the the `n` top
+    files that match the query, ranked according to tf-idf.
     """
-    final_words = []
-    avoided_words = [] # WORDS WHICH ARE TO BE AVOIDED IN THE FINAL LIST
     
-    # making the avoided_words list
-    for word in string.punctuation: # the string library has a string of punctuations
-        avoided_words.append(word)
-    for word in nltk.corpus.stopwords.words("english"): # the nltk lib. has a list of stopwords commonly used in english
-        avoided_words.append(word)
+    tfidf = {}
+    for file in files:
+        tfidf[file] = 0
+        tokens = len(files[file])
+        for word in query:
+            if word in files[file]:
+                freq = files[file].count(word) + 1
+            else:
+                freq = 1
+            tf = freq / tokens
+            if word in idfs.keys():
+                idf = idfs[word]
+            else: 
+                idf = 1
+            tfidf[file] = tf * idf
 
-    tokens = nltk.word_tokenize(document)
+    top_files = sorted(tfidf , key=tfidf.get, reverse = True)
+    return top_files[:n]
 
-    # filtering the tokens
-    for token in tokens :
-        if token not in avoided_words:
-            final_words.append(token.lower())
-
-    return final_words
     
