@@ -1,6 +1,6 @@
 # ProjectSearch
 This is a pseudo-search engine which goes through notes and gives answers to questions.
-This project is still in its planning Phase.
+This project is work in progress.
 We expect to make a python program which takes notes in `.txt` format and ask for questions and answer them.
 
 ## Current Deliverables
