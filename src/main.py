@@ -3,8 +3,8 @@ import sys
 import os
 import string
 import math
-from data import loadData as data # data directory is where we have the functions defined to curate data.
-from tfidf import tfidf as tfidf
+from data import loadData as data 
+from tfidf import tfidf
 FILE = 1
 SENTENCES = 1
 
