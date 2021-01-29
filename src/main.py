@@ -43,7 +43,7 @@ def main():
     idfs = tfidf.compute_idfs(sentences)
 
     # Determine top sentence matches
-    matches = tfidf.top_sentences(query, sentences, idfs, n=SENTENCE_MATCHES)
+    matches = tfidf.top_sentences(query, sentences, idfs, n=SENTENCES)
     for match in matches:
         print(match)
 
