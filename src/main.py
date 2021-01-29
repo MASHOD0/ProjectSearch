@@ -22,7 +22,7 @@ def main():
     file_idfs = tfidf.compute_idfs(file_words)
 
     # Prompt user for query
-    query = set(tokenize(input("Query: ")))
+    query = set(data.tokenize(input("Query: ")))
     marking = None
     while type(marking) == int:
         marking = input("Marking: ")
