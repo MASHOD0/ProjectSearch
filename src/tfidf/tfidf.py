@@ -25,6 +25,7 @@ def compute_idfs(documents):
     # calculating the idf value for indivisual words
     for word, value in counts.items():
         idfs[word] = math.log( (num_docs / value) )
+    return idfs
 
 
 def top_files(query, files, idfs, n):
@@ -34,7 +35,9 @@ def top_files(query, files, idfs, n):
     to their IDF values), return a list of the filenames of the the `n` top
     files that match the query, ranked according to tf-idf.
     """
-    
+    print(query)
+    print(idfs)
+    #print(files)
     tfidf = {}
     for file in files:
         tfidf[file] = 0
