@@ -35,7 +35,7 @@ def main():
     for filename in filenames:
         for passage in files[filename].split("\n"):
             for sentence in nltk.sent_tokenize(passage):
-                tokens = tokenize(sentence)
+                tokens = data.tokenize(sentence)
                 if tokens:
                     sentences[sentence] = tokens
 
