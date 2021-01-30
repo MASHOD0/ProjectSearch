@@ -26,6 +26,8 @@ python3 src/main corpus
 ### `src` directory
 - `src/` directory has `main.py` and two other directories `data/` and `tfidf/`
 - `main.py` is the main file from where the code is run .
+### `data/` directory
+- it has `data.py` and the `corpus/` directory
 
 
 
