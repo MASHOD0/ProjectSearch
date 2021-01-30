@@ -21,6 +21,13 @@ pip3 install requirements.txt
 python3 src/main corpus
 ```
 
+## Directory structure 
+
+### `src` directory
+- `src/` directory has `main.py` and two other directories `data/` and `tfidf/`
+- `main.py` is the main file from where the code is run .
+
+
 
 
 
