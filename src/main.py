@@ -5,8 +5,8 @@ import string
 import math
 from data import loadData as data 
 from tfidf import tfidf
-FILE = 1
-SENTENCES = 1
+FILE = 4
+SENTENCES = 4
 
 def main():
     # Check command-line arguments
