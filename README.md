@@ -12,11 +12,11 @@ python3 -m venv venv
 ```
 source venv/Scripts/activate
 ```
-3. install all the required packages
+3. install all the required packages by running this command
 ```
 pip3 install requirements.txt
 ```
-4. run the code .
+4. run the code by running this command.
 ```
 python3 src/main corpus
 ```
