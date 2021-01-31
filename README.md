@@ -21,7 +21,7 @@ pip3 install requirements.txt
 python3 src/main corpus
 ```
 
-## Directory structure 
+## Directory structure  
 
 ### `src` directory
 - `src/` directory has `main.py` and two other directories `data/` and `tfidf/`

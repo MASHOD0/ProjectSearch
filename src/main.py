@@ -4,7 +4,7 @@ import os
 import string
 import math
 from data import loadData as data 
-from tfidf import tfidf
+from process import tfidf
 FILE = 4
 SENTENCES = 4
 
