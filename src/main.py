@@ -4,7 +4,7 @@ import os
 import string
 import math
 from data import loadData as data 
-from process import tfidf
+from process import tfidf as tfidf 
 FILE = 4
 SENTENCES = 4
 
@@ -46,28 +46,6 @@ def main():
     matches = tfidf.top_sentences(query, sentences, idfs, n=SENTENCES)
     for match in matches:
         print(match)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 if __name__=="__main__":
     main()
