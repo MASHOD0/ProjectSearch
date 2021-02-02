@@ -26,7 +26,7 @@ def main():
     query = data.tokenize(input("Query: "))
     query = set(qprocess.filter(query))
     marking = None
-    while type(marking) == int:
+    while type(marking) != int:
         marking = input("Marking: ")
 
     # Determine top file matches according to TF-IDF
