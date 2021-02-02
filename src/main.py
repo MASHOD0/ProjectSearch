@@ -4,7 +4,8 @@ import os
 import string
 import math
 from data import loadData as data 
-from process import tfidf as tfidf 
+from process import tfidf as tfidf
+from process import qprocess as qprocess
 FILE = 4
 SENTENCES = 4
 
@@ -22,7 +23,8 @@ def main():
     file_idfs = tfidf.compute_idfs(file_words)
 
     # Prompt user for query
-    query = set(data.tokenize(input("Query: ")))
+    query = data.tokenize(input("Query: "))
+    query = set(qprocess.filter(query))
     marking = None
     while type(marking) == int:
         marking = input("Marking: ")
