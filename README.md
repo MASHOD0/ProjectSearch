@@ -28,7 +28,8 @@ python3 src/main corpus
 - `main.py` is the main file from where the code is run .
 ### `data/` directory
 - it has `data.py` and the `corpus/` directory
-
+### `process/` directory 
+- it has two files `tfidf.py` and `qprocess.py`
 
 
 
