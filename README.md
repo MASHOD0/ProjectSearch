@@ -40,6 +40,9 @@ we have 4 scripts as of now
 ### `main.py`
 - it is the main script which links all other files
 
+### `data.py`
+- it has functions to curate the data , to search from 
+
 
 
 
