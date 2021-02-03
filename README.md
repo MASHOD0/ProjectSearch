@@ -31,7 +31,11 @@ python3 src/main corpus
 - it has two files `tfidf.py` and `qprocess.py`
 
 ## files
-
+we have 3 scripts as of now 
+- `main.py`
+- `data.py`
+- `tifidf.py`
+- `qprocess.py`
 
 
 
