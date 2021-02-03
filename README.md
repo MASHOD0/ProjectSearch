@@ -37,6 +37,9 @@ we have 4 scripts as of now
 - `tifidf.py`
 - `qprocess.py`
 
+### `main.py`
+- it is the main script which links all other files
+
 
 
 
