@@ -43,8 +43,6 @@ We have 4 scripts as of now
 ### `data.py`
 - It has functions to curate the data , to search from 
 
-
-
 <!--
 ## Current Deliverables
 - [x] take an input from `.txt` files and 
@@ -52,5 +50,7 @@ We have 4 scripts as of now
 - [x] make a tf-idf algorithm to rank the sentences
 - [x] and return those sentences
 -->
+<!--
 ## Deadline 
  We expect to complete this project before March 2021
+-->
