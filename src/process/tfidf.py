@@ -11,6 +11,8 @@ def compute_idfs(documents):
 
     Any word that appears in at least one of the documents should be in the
     resulting dictionary.
+    :param input: documents to compute idfs from
+    :return: idfs
     """
     counts = {} # counts the presence of a given word
     idfs = {}
