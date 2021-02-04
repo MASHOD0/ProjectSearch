@@ -10,6 +10,7 @@ FILE = 4
 SENTENCES = 4
 
 def main():
+    
     # Check command-line arguments
     if len(sys.argv) != 2:
         sys.exit("Usage: python questions.py corpus")
