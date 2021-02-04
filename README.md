@@ -45,6 +45,9 @@ We have 4 scripts as of now
 
 ### `tfidf.py`
 - It has the functions to find the results.
+
+### `qprocess.py`
+- It has the funtions to filter the questions to provide better answers.
 <!--
 ## Current Deliverables
 - [x] take an input from `.txt` files and 
