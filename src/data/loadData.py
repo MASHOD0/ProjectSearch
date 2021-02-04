@@ -33,6 +33,8 @@ def tokenize(document):
 
     Process document by coverting all words to lowercase, and removing any
     punctuation or English stopwords.
+    :param document: document to tokenise
+    :return: tokenised list
     """
     final_words = []
     avoided_words = [] # WORDS WHICH ARE TO BE AVOIDED IN THE FINAL LIST
