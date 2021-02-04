@@ -9,6 +9,8 @@ def load_files(directory):
     """
     Given a directory name, return a dictionary mapping the filename of each
     `.txt` file inside that directory to the file's contents as a string.
+    :param directory: Directory of the data
+    :return: dict contaning all the data
     """
     dataDir = os.path.join(os.path.dirname(os.path.abspath(__file__)),directory)  
     info = {} # Dict to store all the information
