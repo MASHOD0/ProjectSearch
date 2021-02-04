@@ -43,6 +43,8 @@ We have 4 scripts as of now
 ### `data.py`
 - It has functions to curate the data , to search from 
 
+### `tfidf.py`
+- It has the functions to find the results.
 <!--
 ## Current Deliverables
 - [x] take an input from `.txt` files and 
