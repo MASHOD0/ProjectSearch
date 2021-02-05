@@ -36,6 +36,10 @@ def top_files(query, files, idfs, n):
     files to a list of their words), and `idfs` (a dictionary mapping words
     to their IDF values), return a list of the filenames of the the `n` top
     files that match the query, ranked according to tf-idf.
+    :param query: set of words
+    :param files: Dict maping names of files to a list of words
+    :param idfs: Dict mapping words to idf values 
+    :param n: no of files to return
     """
     
     tfidf = {}
