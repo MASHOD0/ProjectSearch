@@ -68,6 +68,10 @@ def top_sentences(query, sentences, idfs, n):
     to their IDF values), return a list of the `n` top sentences that match
     the query, ranked according to idf. If there are ties, preference should
     be given to sentences that have a higher query term density.
+    :param query: set of words
+    :param sentences: Dict of sentences mapped to words
+    :param idfs: Dict of words mapped to idf values
+    :param n: Number of sentences to return
     """
     
     sentence_idf = {}
