@@ -10,9 +10,9 @@ FILE = 4
 SENTENCES = 4
 
 def main():
-"""
-This is the main function it links all the other functions to run the program.
-"""    
+    """
+    This is the main function it links all the other functions to run the program.
+    """    
     # Check command-line arguments
     if len(sys.argv) != 2:
         sys.exit("Usage: python src/main.py corpus")
