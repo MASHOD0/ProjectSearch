@@ -33,7 +33,7 @@ def main():
         marking = input("Marking: ")
 
     # Determine top file matches according to TF-IDF
-    filenames = tfidf.top_files(query, file_words, file_idfs, n=marking)
+    filenames = tfidf.top_files(query, file_words, file_idfs, marking)
 
     # Extract sentences from top files
     sentences = dict()
