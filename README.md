@@ -23,7 +23,28 @@ python3 src/main.py corpus
 
 ## Directory structure  
 
-
+📦src
+ ┣ 📂data
+ ┃ ┣ 📂corpus
+ ┃ ┃ ┣ 📜artificial_intelligence.txt
+ ┃ ┃ ┣ 📜machine_learning.txt
+ ┃ ┃ ┣ 📜natural_language_processing.txt
+ ┃ ┃ ┣ 📜neural_network.txt
+ ┃ ┃ ┣ 📜probability.txt
+ ┃ ┃ ┗ 📜python.txt
+ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┗ 📜loadData.cpython-38.pyc
+ ┃ ┗ 📜loadData.py
+ ┣ 📂process
+ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┣ 📜qprocess.cpython-38.pyc
+ ┃ ┃ ┗ 📜tfidf.cpython-38.pyc
+ ┃ ┣ 📜qprocess.py
+ ┃ ┗ 📜tfidf.py
+ ┣ 📜main.py
+ ┣ 📜requirements.txt
+ ┗ 📜requriments.txt
+ 
 ### `src/` directory
 - `src/` directory has `main.py` and two other directories `data/` and `process/`
 ### `data/` directory

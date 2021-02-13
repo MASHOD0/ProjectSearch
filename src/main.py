@@ -23,12 +23,14 @@ def main():
         filename: data.tokenize(files[filename])
         for filename in files
     }
+
     file_idfs = tfidf.compute_idfs(file_words)
 
     # Prompt user for query
     query = data.tokenize(input("Query: "))
     query = set(qprocess.filter(query))
     marking = None
+    
     while type(marking) != int:
         marking = input("Marking: ")
 
