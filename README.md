@@ -32,13 +32,8 @@ python3 src/main.py corpus
     ┃ ┃ ┣ 📜neural_network.txt
     ┃ ┃ ┣ 📜probability.txt
     ┃ ┃ ┗ 📜python.txt
-    ┃ ┣ 📂__pycache__
-    ┃ ┃ ┗ 📜loadData.cpython-38.pyc
     ┃ ┗ 📜loadData.py
     ┣ 📂process
-    ┃ ┣ 📂__pycache__
-    ┃ ┃ ┣ 📜qprocess.cpython-38.pyc
-    ┃ ┃ ┗ 📜tfidf.cpython-38.pyc
     ┃ ┣ 📜qprocess.py
     ┃ ┗ 📜tfidf.py
     ┣ 📜main.py
