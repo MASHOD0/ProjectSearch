@@ -22,10 +22,10 @@ python3 src/main.py corpus
 ```
 
 ## Directory structure  
--
--
--
--
+-     `src/`____|_____`data/`
+-               |
+-               |
+-               |_____ `process/`
 -
 -
 -
