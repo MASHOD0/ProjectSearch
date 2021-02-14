@@ -10,7 +10,7 @@ python3 -m venv venv
 ```
 2. Activate the virtual environment by running this command
 ```
-source venv/Scripts/activate
+source src/venv/Scripts/activate
 ```
 3. Install all the required packages by running this command
 ```
