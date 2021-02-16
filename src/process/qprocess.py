@@ -1,3 +1,5 @@
+import nltk
+
 def filter(question):
     """
     This function filters all the unwanted words in the question list
