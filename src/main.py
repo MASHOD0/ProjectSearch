@@ -28,7 +28,7 @@ def main():
 
     # Prompt user for query
     
-    query = set(data.tokenize_q(input("Query: ")))
+    query = set(data.tokenize(input("Query: ")))
     marking = None
     
     while type(marking) != int:
