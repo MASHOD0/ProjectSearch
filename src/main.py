@@ -27,12 +27,13 @@ def main():
     file_idfs = tfidf.compute_idfs(file_words)
 
     # Prompt user for query
-    query = data.tokenize(input("Query: "))
-    query = set(qprocess.filter(query))
+    
+    query = set(data.tokenize(input("Query: ")))
     marking = None
     
     while type(marking) != int:
         marking = input("Marking: ")
+        
 
     # Determine top file matches according to TF-IDF
     filenames = tfidf.top_files(query, file_words, file_idfs, marking)
