@@ -32,7 +32,7 @@ def main():
     marking = None
     
     while type(marking) != int:
-        marking = input("Marking: ")
+        marking = int(input("Marking: "))
         
 
     # Determine top file matches according to TF-IDF
