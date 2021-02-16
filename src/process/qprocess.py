@@ -1,4 +1,5 @@
 import nltk
+import numpy as np
 
 def filter(question):
     """
