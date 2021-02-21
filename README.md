@@ -39,7 +39,7 @@ python3 src/main.py corpus
     ┣ 📂tests
     ┃ ┗ 📜tests.py
     ┣ 📜main.py
-    ┣ 📜requirements.txt
+    ┗  📜requirements.txt
     
  
 ### `src/` directory
