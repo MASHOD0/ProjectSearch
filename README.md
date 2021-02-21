@@ -21,7 +21,7 @@ pip3 install requirements.txt
 python3 src/main.py corpus
 ```
 
-## Directory structure  
+## Directory Structure  
 
     📦src
     ┣ 📂data
