@@ -38,7 +38,7 @@ python3 src/main.py corpus
     ┃ ┗ 📜tfidf.py
     ┣ 📜main.py
     ┣ 📜requirements.txt
-    ┗ 📜requriments.txt
+    
  
 ### `src/` directory
 - `src/` directory has `main.py` and two other directories `data/` and `process/`
