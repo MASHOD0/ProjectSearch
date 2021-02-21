@@ -36,6 +36,7 @@ python3 src/main.py corpus
     ┣ 📂process
     ┃ ┣ 📜qprocess.py
     ┃ ┗ 📜tfidf.py
+    ┣ 📂tests
     ┣ 📜main.py
     ┣ 📜requirements.txt
     
