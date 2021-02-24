@@ -31,8 +31,11 @@ def main():
     query = set(data.tokenize(input("Query: ")))
     marking = None
     
-    while type(marking) != int:
-        marking = int(input("Marking: "))
+    try:
+        while type(marking) != int:
+            marking = int(input("Marking: "))
+    except Exception as e:
+        print("Please enter a valid integer")
         
 
     # Determine top file matches according to TF-IDF
