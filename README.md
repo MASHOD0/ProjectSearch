@@ -1,5 +1,5 @@
 # ProjectSearch
-This is a pseudo-search engine which goes through notes and gives answers to questions.
+A pseudo-search engine which goes through notes and gives answers to questions.
 This project is work in progress(the code works).
 We expect to make a python program which takes notes in `.txt` format and ask for questions and answer them.
 
@@ -21,7 +21,7 @@ pip3 install requirements.txt
 python3 src/main.py corpus
 ```
 
-## Directory structure  
+## Directory Structure  
 
     📦src
     ┣ 📂data
@@ -36,9 +36,11 @@ python3 src/main.py corpus
     ┣ 📂process
     ┃ ┣ 📜qprocess.py
     ┃ ┗ 📜tfidf.py
+    ┣ 📂tests
+    ┃ ┗ 📜tests.py
     ┣ 📜main.py
-    ┣ 📜requirements.txt
-    ┗ 📜requriments.txt
+    ┗  📜requirements.txt
+    
  
 ### `src/` directory
 - `src/` directory has `main.py` and two other directories `data/` and `process/`
