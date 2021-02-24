@@ -1,8 +1,5 @@
 import nltk 
 import sys
-import os
-import string
-import math
 from data import loadData as data 
 from process import tfidf as tfidf
 from process import qprocess as qprocess
@@ -36,7 +33,7 @@ def main():
                 marking = int(input("Marking: "))
         except Exception as e:
             print("Please enter a valid integer")
-        if type(marking) ==int:
+        if type(marking) == int:
             break
         
 
