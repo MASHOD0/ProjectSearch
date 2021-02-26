@@ -1,3 +1,5 @@
+import string
+
 def filter(question):
     """
     This function filters all the unwanted words in the question list
@@ -9,6 +11,7 @@ def filter(question):
         filtered_words = ["how","what"]
         if word in filtered_words:
             question.remove(word)
+
 def tokenize(document):
     """
     Given a document (represented as a string), return a list of all of the
@@ -16,7 +19,7 @@ def tokenize(document):
 
     Process document by coverting all words to lowercase, and removing any
     punctuation or English stopwords.
-    :param document: document to tokenize
+    :param document: string to tokenize
     :return: tokenized list
     """
     final_words = []
