@@ -3,8 +3,8 @@ import sys
 from data import loadData as data 
 from process import tfidf as tfidf
 from process import qprocess as qprocess
-FILE = 4
-SENTENCES = 4
+#FILE = 4
+#SENTENCES = 4
 
 def main():
     """
@@ -53,7 +53,7 @@ def main():
     idfs = tfidf.compute_idfs(sentences)
 
     # Determine top sentence matches
-    matches = tfidf.top_sentences(query, sentences, idfs, SENTENCES)
+    matches = tfidf.top_sentences(query, sentences, idfs, )
     for match in matches:
         print(match)
 
