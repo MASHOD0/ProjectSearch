@@ -13,7 +13,7 @@ def filter(question):
         if word in filtered_words:
             question.remove(word)
 
-def tokenize(document):
+def q_tokenize(document):
     """
     Given a document (represented as a string), return a list of all of the
     words in that document, in order.
