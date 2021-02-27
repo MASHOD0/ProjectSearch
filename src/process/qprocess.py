@@ -1,4 +1,5 @@
 import string
+import nltk
 
 def filter(question):
     """
