@@ -72,9 +72,6 @@ We have 4 scripts as of now
 - [x] take questions as input and also the marking for the question
 - [x] make a tf-idf algorithm to rank the sentences
 - [x] and return those sentences
-## Known Issues
-- Questions starting with `what`, `why` dont get good enough answers
-
 
 ## Deadline 
  We expect to complete this project before March 2021
