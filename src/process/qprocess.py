@@ -1,17 +1,17 @@
 import string
 import nltk
 
-def filter(question):
+def filter(q_words):
     """
-    This function filters all the unwanted words in the question list
+    Filters all the unwanted words in the question list .
     :param question: the list containing keyords from question
     """
-    for word in question:
+    for word in q_words:
         if word == None:
             pass
         filtered_words = ["how","what"]
         if word in filtered_words:
-            question.remove(word)
+            q_words.remove(word)
 
 def q_tokenize(document):
     """
