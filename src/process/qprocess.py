@@ -6,10 +6,10 @@ def filter(q_words):
     Filters all the unwanted words in the question list .
     :param question: the list containing keyords from question
     """
+    filtered_words = ["how","what"]
     for word in q_words:
         if word == None:
             pass
-        filtered_words = ["how","what"]
         if word in filtered_words:
             q_words.remove(word)
 
