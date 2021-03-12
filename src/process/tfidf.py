@@ -19,11 +19,12 @@ def compute_idfs(documents):
     num_docs = len(documents)
     # counting the the occurance of indivisual words
     for doc in documents:
-        for word in documents[doc]: 
-            if word in counts.keys():
-                counts[word] += 1
-            else:
-                counts[word] = 1
+        if documents[doc] != None:
+            for word in documents[doc]: 
+                if word in counts.keys():
+                    counts[word] += 1
+                else:
+                    counts[word] = 1
     # calculating the idf value for indivisual words
     for word, value in counts.items():
         idfs[word] = math.log( (num_docs / value) )
