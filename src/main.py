@@ -17,7 +17,7 @@ def main():
     # Calculate IDF values across files
     files = data.load_files(sys.argv[1])
     file_words = {
-        filename: qprocess.tokenize(files[filename])
+        filename: qprocess.q_tokenize(files[filename])
         for filename in files
     }
 
