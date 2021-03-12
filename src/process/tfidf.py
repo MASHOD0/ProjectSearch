@@ -19,9 +19,7 @@ def compute_idfs(documents):
     num_docs = len(documents)
     # counting the the occurance of indivisual words
     for doc in documents:
-        if doc == None:
-            pass
-        for word in set(documents[doc]): 
+        for word in documents[doc]: 
             if word in counts.keys():
                 counts[word] += 1
             else:
