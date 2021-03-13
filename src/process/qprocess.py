@@ -8,8 +8,6 @@ def filter(q_words):
     """
     filtered_words = ["how","what"]
     for word in q_words:
-        if word == None:
-            pass
         if word in filtered_words:
             q_words.remove(word)
 
