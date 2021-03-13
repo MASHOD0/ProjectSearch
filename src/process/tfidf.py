@@ -51,20 +51,19 @@ def top_files(query, files, idfs, n):
     
 
     for file in files:
-        if tfidf[file] != None:
-            tfidf[file] = 0
-            tokens = len(files[file])
-            for word in query:
-                if word in files[file]:
-                    freq = files[file].count(word) + 1
-                else:
-                    freq = 1
-                tf = freq / tokens
-                if word in idfs.keys():
-                    idf = idfs[word]
-                else: 
-                    idf = 1
-                tfidf[file] = tf * idf
+        tfidf[file] = 0
+        tokens = len(files[file])
+        for word in query:
+            if word in files[file]:
+                freq = files[file].count(word) + 1
+            else:
+                freq = 1
+            tf = freq / tokens
+            if word in idfs.keys():
+                idf = idfs[word]
+            else: 
+                idf = 1
+            tfidf[file] = tf * idf
 
     top_files = sorted(tfidf , key=tfidf.get, reverse = True)
     return top_files[:n]
