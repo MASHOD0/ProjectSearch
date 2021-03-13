@@ -18,7 +18,7 @@ pip3 install requirements.txt
 ```
 4. Run the code by running this command.
 ```
-python3 src/main.py corpus
+python3 main.py corpus
 ```
 
 ## Directory Structure  
