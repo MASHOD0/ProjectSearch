@@ -21,8 +21,7 @@ def load_files(directory):
         filePath = os.path.join(dataDir, file)
         f = open(filePath, "r", encoding = "utf8")
         info[file] = f.read()
-        
-
+    print(info)
     return info
 
 
@@ -51,6 +50,6 @@ def tokenize(document):
     for token in tokens :
         if token not in avoided_words:
             final_words.append(token.lower())
-
+    print(final_words)
     return final_words
     
