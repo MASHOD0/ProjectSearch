@@ -49,6 +49,5 @@ def tokenize(document):
     for token in tokens :
         if token not in avoided_words:
             final_words.append(token.lower())
-    print(final_words)
     return final_words
     
