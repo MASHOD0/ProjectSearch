@@ -21,7 +21,6 @@ def load_files(directory):
         filePath = os.path.join(dataDir, file)
         f = open(filePath, "r", encoding = "utf8")
         info[file] = f.read()
-    print(info)
     return info
 
 
