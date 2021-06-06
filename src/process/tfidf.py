@@ -31,7 +31,7 @@ def compute_idfs(documents):
     # calculating the idf value for indivisual words
     for word, value in counts.items():
         idfs[word] = math.log( (num_docs / value) )
-    print(documents)
+
     return idfs
 
 
