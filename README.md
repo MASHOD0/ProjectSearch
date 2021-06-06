@@ -1,7 +1,7 @@
 # ProjectSearch
 A pseudo-search engine which goes through notes and gives answers to questions.
 This project is work in progress (the code works).
-We expect to make a python program which takes notes in `.txt` format and ask for questions and answer them.
+We expect to make a Python program which takes notes in `.txt` format and asks for questions to answer them.
 
 ## Instructions to run the code
 1. Make a python virtual environment by running this command in the terminal.
