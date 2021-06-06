@@ -6,7 +6,7 @@ We expect to make a Python program which takes notes in `.txt` format and asks f
 ## Instructions to run the code
 1. Make a python virtual environment by running this command in the terminal.
 ```
-python3 -m venv venv
+python -m venv venv
 ```
 2. Activate the virtual environment by running this command
 ```
@@ -14,11 +14,11 @@ source venv/Scripts/activate
 ```
 3. Install all the required packages by running this command
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 4. Run the code by running this command.
 ```
-python3 main.py corpus
+python main.py corpus
 ```
 
 ## Directory Structure  
