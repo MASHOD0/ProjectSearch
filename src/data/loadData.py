@@ -22,7 +22,7 @@ def load_files(directory):
         f = open(filePath, "r", encoding = "utf8")
         info[file] = f.read()
     return info
-
+    
 
 def tokenize(document):
     """
