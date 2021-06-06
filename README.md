@@ -14,7 +14,7 @@ source venv/Scripts/activate
 ```
 3. Install all the required packages by running this command
 ```
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 4. Run the code by running this command.
 ```
